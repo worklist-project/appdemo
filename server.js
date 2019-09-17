@@ -19,8 +19,8 @@ db.select("*")
 app.use(bodyParser.json());
 app.use(cors());
 
-app.listen(process.env.PORT || 3001, () => {
-  console.log("app is running on port 3001");
+app.listen(process.env.PORT, () => {
+  console.log("app is running");
 });
 
 app.get("/", (req, res) => {
