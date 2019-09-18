@@ -20,7 +20,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 app.listen(process.env.PORT, () => {
-  console.log("app is running");
+  console.log(`app is running on ${process.env.PORT}`);
 });
 
 app.get("/", (req, res) => {
